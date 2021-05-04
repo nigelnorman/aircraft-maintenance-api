@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aircraft-maintenance-api", "aircraft-maintenance-api\aircraft-maintenance-api.csproj", "{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aircraft-maintenance-api.Tests", "aircraft-maintenance-api.Tests\aircraft-maintenance-api.Tests.csproj", "{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {269328B4-FE1E-4307-9731-CE3BF661D45D}
+	EndGlobalSection
+EndGlobal
