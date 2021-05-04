@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aircraft-maintenance-api", "aircraft-maintenance-api\aircraft-maintenance-api.csproj", "{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aircraft.Maintenance.Api", "aircraft-maintenance-api\Aircraft.Maintenance.Api.csproj", "{F16C0730-3372-4B4F-9728-EE1EFDCA1AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aircraft-maintenance-api.Tests", "aircraft-maintenance-api.Tests\aircraft-maintenance-api.Tests.csproj", "{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aircraft.Maintenance.Api.Tests", "aircraft-maintenance-api.Tests\Aircraft.Maintenance.Api.Tests.csproj", "{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateMaintenanceDueQueue", "CalculateMaintenanceDueQueue\CalculateMaintenanceDueQueue.csproj", "{AD616D9A-D2A0-4DB6-AACC-4393728D8F67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aircraft.Maintenance.Core", "Core\Aircraft.Maintenance.Core.csproj", "{D9F9B3F7-508C-4BC7-A990-EE5A876A690F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{895BA0B3-40CA-46A0-8A0C-C208FAC22D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD616D9A-D2A0-4DB6-AACC-4393728D8F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD616D9A-D2A0-4DB6-AACC-4393728D8F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD616D9A-D2A0-4DB6-AACC-4393728D8F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD616D9A-D2A0-4DB6-AACC-4393728D8F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F9B3F7-508C-4BC7-A990-EE5A876A690F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F9B3F7-508C-4BC7-A990-EE5A876A690F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F9B3F7-508C-4BC7-A990-EE5A876A690F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F9B3F7-508C-4BC7-A990-EE5A876A690F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

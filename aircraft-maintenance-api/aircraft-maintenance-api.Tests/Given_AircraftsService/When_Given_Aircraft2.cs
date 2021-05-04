@@ -1,6 +1,6 @@
-﻿using aircraft_maintenance_api.Abstractions;
-using aircraft_maintenance_api.Classes;
-using aircraft_maintenance_api.Services;
+﻿using Aircraft.Maintenance.Core.Abstractions;
+using Aircraft.Maintenance.Core.Classes;
+using Aircraft.Maintenance.Core.Services;
 using FluentAssertions;
 using Moq;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using Xunit;
 
-namespace aircraft_maintenance_api.Tests.Given_AircraftsService
+namespace Aircraft.Maintenance.Core.Tests.Given_AircraftsService
 {
     public class When_Given_Aircraft2
     {

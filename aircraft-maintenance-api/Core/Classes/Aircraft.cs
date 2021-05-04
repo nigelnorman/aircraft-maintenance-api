@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace aircraft_maintenance_api.Classes
+namespace Aircraft.Maintenance.Core.Classes
 {
     public class Aircraft
     {

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.1.8" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.1.8" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aircraft-maintenance-api\Aircraft.Maintenance.Api.csproj" />
+    <ProjectReference Include="..\Core\Aircraft.Maintenance.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,23 +1,24 @@
-﻿using aircraft_maintenance_api.Abstractions;
-using aircraft_maintenance_api.Classes;
+﻿using Aircraft.Maintenance.Core.Abstractions;
+using Aircraft.Maintenance.Core.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace aircraft_maintenance_api.Services
+namespace Aircraft.Maintenance.Core.Services
 {
     public class AircraftsService : IAircraftsService
     {
-        private readonly List<Aircraft> _aircraftRepository = new List<Aircraft>
+        // TODO: Fix the ambiguous namespace hell I created for myself here...
+        private readonly List<Aircraft.Maintenance.Core.Classes.Aircraft> _aircraftRepository = new List<Aircraft.Maintenance.Core.Classes.Aircraft>
         {
-            new Aircraft
+            new Aircraft.Maintenance.Core.Classes.Aircraft
             {
                 AircraftId = 1,
                 DailyHours = 0.7f,
                 CurrentHours = 550f
             },
-            new Aircraft
+            new Aircraft.Maintenance.Core.Classes.Aircraft
             {
                 AircraftId = 2,
                 DailyHours = 1.1f,
@@ -75,7 +76,7 @@ namespace aircraft_maintenance_api.Services
             return logDate.Value.AddMonths(intervalMonths.Value);
         }
 
-        private float? DaysRemainingByHoursInterval(int? logHours, int? intervalHours, Aircraft aircraft)
+        private float? DaysRemainingByHoursInterval(int? logHours, int? intervalHours, Aircraft.Maintenance.Core.Classes.Aircraft aircraft)
         {
             var remaining = ((logHours ?? 0) + (intervalHours ?? 0) - aircraft.CurrentHours) / aircraft.DailyHours;
 

@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "aircraft_maintenance_api": {
+    "Aircraft.Maintenance.Core": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

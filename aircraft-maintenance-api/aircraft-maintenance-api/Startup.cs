@@ -1,5 +1,5 @@
-using aircraft_maintenance_api.Abstractions;
-using aircraft_maintenance_api.Services;
+using Aircraft.Maintenance.Core.Abstractions;
+using Aircraft.Maintenance.Core.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -12,8 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MassTransit;
+using Aircraft.Maintenance.Core.Contracts;
 
-namespace aircraft_maintenance_api
+namespace Aircraft.Maintenance.Core
 {
     public class Startup
     {
@@ -28,7 +30,17 @@ namespace aircraft_maintenance_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<AircraftsService>();
+            services.AddMassTransit(x =>
+            {
+                x.UsingRabbitMq((context, cfg) => cfg.Host("localhost"));
+
+                var timeout = TimeSpan.FromSeconds(10);
+                var serviceAddress = new Uri("rabbitmq://localhost/aircrafts-service");
+
+                x.AddRequestClient<CalculateMaintenanceDueRequest>(serviceAddress, timeout);
+            });
+
+            services.AddMassTransitHostedService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

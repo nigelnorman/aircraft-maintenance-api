@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "aircraft_maintenance_worker": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

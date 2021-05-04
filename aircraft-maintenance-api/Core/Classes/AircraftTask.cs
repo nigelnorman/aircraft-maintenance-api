@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
 
-namespace aircraft_maintenance_api.Classes
+namespace Aircraft.Maintenance.Core.Classes
 {
     [DataContract]
     public class AircraftTask

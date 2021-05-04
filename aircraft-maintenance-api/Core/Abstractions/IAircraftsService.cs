@@ -1,10 +1,10 @@
-﻿using aircraft_maintenance_api.Classes;
+﻿using Aircraft.Maintenance.Core.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace aircraft_maintenance_api.Abstractions
+namespace Aircraft.Maintenance.Core.Abstractions
 {
     public interface IAircraftsService
     {

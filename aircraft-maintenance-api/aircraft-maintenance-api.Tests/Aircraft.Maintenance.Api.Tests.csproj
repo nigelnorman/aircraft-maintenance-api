@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>aircraft_maintenance_api.Tests</RootNamespace>
+    <RootNamespace>Aircraft.Maintenance.Core.Tests</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\aircraft-maintenance-api\aircraft-maintenance-api.csproj" />
+    <ProjectReference Include="..\aircraft-maintenance-api\Aircraft.Maintenance.Api.csproj" />
   </ItemGroup>
 
 </Project>
